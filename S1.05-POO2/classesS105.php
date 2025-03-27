@@ -1,11 +1,37 @@
 <?php
 
-//Nivell 3 - Exercici 1
-echo "<br>N3 - E1 <br>";
+require 'abstractS105.php';
 
-interface Shape1
+class Dog extends Animal
 {
-    public function area();
+    public function makeSound()
+    {
+        echo "Bup, bup!";
+    }
+}
+
+class Cat extends Animal
+{
+    public function makeSound()
+    {
+        echo "Miau, miau!";
+    }
+}
+
+class Triangle0 extends Shape0
+{
+    public function area()
+    {
+        return ($this->height * $this->width) / 2;
+    }
+}
+
+class Rectangle0 extends Shape0
+{
+    public function area()
+    {
+        return $this->height * $this->width;
+    }
 }
 
 class Triangle1 implements Shape1
@@ -53,14 +79,6 @@ class Cercle1 implements Shape1
 
     public function area()
     {
-        return $this->radius * $this->radius * pi();
+        return ($this->radius ** 2) * pi();
     }
 }
-
-$triangle2 = new Triangle1(5, 3);
-$rectangle2 = new Rectangle1(8, 6);
-$cercle2 = new Cercle1(5);
-
-echo "L'àrea del triangle és: " . $triangle2->area() . "<br>";
-echo "L'àrea del rectangle és: " . $rectangle2->area() . "<br>";
-echo "L'àrea del cercle és: " . $cercle2->area() . "<br>";
