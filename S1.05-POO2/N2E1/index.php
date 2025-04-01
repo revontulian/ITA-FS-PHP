@@ -1,5 +1,6 @@
 <?php
 
+require 'shape.php';
 require 'rectangle0.php';
 require 'triangle0.php';
 

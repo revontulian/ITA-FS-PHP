@@ -1,7 +1,5 @@
 <?php
 
-require 'shape1.php';
-
 class Triangle1 implements Shape1
 {
     protected $height;

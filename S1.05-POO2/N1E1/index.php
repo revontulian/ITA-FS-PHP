@@ -1,6 +1,8 @@
 <?php
 
-require 'classesS105-N1E1.php';
+require 'animal.php';
+require 'dog.php';
+require 'cat.php';
 
 //Nivell 1 - Exercici 1
 echo "<br>N2 - E1 <br>";
