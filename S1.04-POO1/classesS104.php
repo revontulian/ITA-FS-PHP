@@ -1,8 +1,5 @@
 <?php
 
-//Nivell 1 - Exercici 1
-echo "<br>N1 - E1 <br>";
-
 class Employee
 {
     public $name;
@@ -25,7 +22,30 @@ class Employee
     }
 }
 
-$Empleat1 = new Employee();
-$Empleat1->initialize("Lorenzo Crevi", 5000);
-$Empleat1->showEmployee();
-echo "<br>";
+class Shape
+{
+    public $height;
+    public $width;
+
+    public function __construct($height, $width)
+    {
+        $this->height = $height;
+        $this->width = $width;
+    }
+}
+
+class Triangle extends Shape
+{
+    public function area()
+    {
+        return ($this->height * $this->width) / 2;
+    }
+}
+
+class Rectangle extends Shape
+{
+    public function area()
+    {
+        return $this->height * $this->width;
+    }
+}

@@ -1,21 +1,24 @@
 <?php
+session_start();
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Access form data
+
     $name = $_POST['name'];
     $email = $_POST['email'];
     $message = $_POST['message'];
-    
-    // Do something with the data (e.g., save to database, send email, etc.)
-    // For now, let's just display it
+
+
     echo "<h1>Form Data Received</h1>";
     echo "<p>Name: " . htmlspecialchars($name) . "</p>";
+    $_SESSION['name'] = $name;
     echo "<p>Email: " . htmlspecialchars($email) . "</p>";
+    $_SESSION['email'] = $email;
     echo "<p>Message: " . htmlspecialchars($message) . "</p>";
+    $_SESSION['message'] = $message;
+
+    var_dump($_SESSION);
     
-    // You could also save to a file or database here
 } else {
-    // If someone accesses this page directly without submitting the form
-    echo "Please submit the form first.";
+
+    echo "L'accés a aquesta informació està restringit.";
 }
-?>
