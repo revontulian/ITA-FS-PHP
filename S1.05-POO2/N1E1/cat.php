@@ -1,5 +1,7 @@
 <?php
 
+require 'animal.php';
+
 class Cat extends Animal
 {
     public function __construct($name)

@@ -1,6 +1,5 @@
 <?php
 
-require 'animal.php';
 require 'dog.php';
 require 'cat.php';
 
