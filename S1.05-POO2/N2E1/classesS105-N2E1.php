@@ -1,21 +1,22 @@
 <?php
 
-require 'abstractS105.php';
-
-class Dog extends Animal
+abstract class Shape0
 {
-    public function makeSound()
+    protected $height;
+    protected $width;
+
+    public function __construct($height, $width)
     {
-        echo "Bup, bup!";
+        $this->height = $height;
+        $this->width = $width;
     }
+
+    public abstract function area();
 }
 
-class Cat extends Animal
+interface Shape1
 {
-    public function makeSound()
-    {
-        echo "Miau, miau!";
-    }
+    public function area();
 }
 
 class Triangle0 extends Shape0
@@ -65,20 +66,5 @@ class Rectangle1 implements Shape1
     public function area()
     {
         return $this->width * $this->height;
-    }
-}
-
-class Cercle1 implements Shape1
-{
-    protected $radius;
-
-    public function __construct($radius)
-    {
-        $this->radius = $radius;
-    }
-
-    public function area()
-    {
-        return ($this->radius ** 2) * pi();
     }
 }
