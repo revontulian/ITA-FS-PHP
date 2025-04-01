@@ -1,5 +1,7 @@
 <?php
 
+require 'shape.php';
+
 class Cercle1 implements Shape1
 {
     protected $radius;

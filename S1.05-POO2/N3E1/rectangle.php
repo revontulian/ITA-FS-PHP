@@ -1,6 +1,8 @@
 <?php
 
-class Triangle1 implements Shape1
+require 'shape.php';
+
+class Rectangle1 implements Shape1
 {
     protected $height;
     protected $width;
@@ -13,6 +15,6 @@ class Triangle1 implements Shape1
 
     public function area()
     {
-        return ($this->width * $this->height) / 2;
+        return $this->width * $this->height;
     }
 }
