@@ -1,6 +1,6 @@
 <?php
 
-require 'N2E1/classesS105-N2E1.php';
+require 'shape1.php';
 
 class Cercle1 implements Shape1
 {

@@ -1,6 +1,7 @@
 <?php
 
-require 'classesS105-N2E1.php';
+require 'rectangle0.php';
+require 'triangle0.php';
 
 //Nivell 2 - Exercici 1
 echo "<br>N2 - E1 <br>";
