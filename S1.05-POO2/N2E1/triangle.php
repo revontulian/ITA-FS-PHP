@@ -1,6 +1,6 @@
 <?php
 
-require 'shape.php';
+require_once 'shape.php';
 
 class Triangle extends Shape
 {

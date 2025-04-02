@@ -1,18 +1,10 @@
 <?php
 
-require 'shape.php';
+require_once 'angularShape.php';
+require_once 'area.php';
 
-class Triangle1 implements Shape1
+class Triangle extends AngularShape implements Area
 {
-    protected $height;
-    protected $width;
-
-    public function __construct($height, $width)
-    {
-        $this->height = $height;
-        $this->width = $width;
-    }
-
     public function area()
     {
         return ($this->width * $this->height) / 2;

@@ -1,18 +1,10 @@
 <?php
 
-require 'shape.php';
+require_once 'angularShape.php';
+require_once 'area.php';
 
-class Rectangle1 implements Shape1
+class Rectangle extends AngularShape implements Area
 {
-    protected $height;
-    protected $width;
-
-    public function __construct($height, $width)
-    {
-        $this->height = $height;
-        $this->width = $width;
-    }
-
     public function area()
     {
         return $this->width * $this->height;

@@ -1,7 +1,7 @@
 <?php
 
-require 'rectangle.php';
-require 'triangle.php';
+require_once 'rectangle.php';
+require_once 'triangle.php';
 
 //Nivell 2 - Exercici 1
 echo "<br>N2 - E1 <br>";

@@ -1,8 +1,8 @@
 <?php
 
-require 'shape.php';
+require_once 'area.php';
 
-class Cercle1 implements Shape1
+class Cercle implements Area
 {
     protected $radius;
 

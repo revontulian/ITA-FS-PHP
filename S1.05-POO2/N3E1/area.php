@@ -1,6 +1,6 @@
 <?php
 
-interface Shape1
+interface Area
 {
     public function area();
 }
