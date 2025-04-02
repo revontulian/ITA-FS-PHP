@@ -4,5 +4,5 @@ abstract class Animal
 {
     public $name;
 
-    function makeSound() {}
+    public abstract function makeSound();
 }

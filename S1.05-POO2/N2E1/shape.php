@@ -1,6 +1,6 @@
 <?php
 
-abstract class Shape0
+abstract class Shape
 {
     protected $height;
     protected $width;

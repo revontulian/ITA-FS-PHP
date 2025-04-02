@@ -1,6 +1,8 @@
 <?php
 
-class Rectangle0 extends Shape0
+require 'shape.php';
+
+class Rectangle extends Shape
 {
     public function area()
     {
