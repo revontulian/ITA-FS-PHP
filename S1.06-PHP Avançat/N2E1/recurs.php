@@ -48,4 +48,17 @@ public function setTipus(Tipus $tipus): void {
     $this->tipus = $tipus;
 }
 
+public function showResource():void{
+    echo "Recurs: " . $this->nom . "<br>";
+    echo "Tema: " . $this->tema->value . "<br>";
+    echo "URL: " . $this->url . "<br>";
+    echo "Tipus: " . $this->tipus->value . "<br>";}
+
+    
 }
+
+//Prova
+$recurs = new RecursDidactic("Primer tema", Tema::SQL, "https://example.com", Tipus::VIDEO);
+$recurs1 = new RecursDidactic("Segon tema", Tema::PHP, "https://example1.com", Tipus::ARTICLE_WEB);
+
+$recurs1->showResource();
