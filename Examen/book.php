@@ -1,6 +1,6 @@
 <?php
 
-class Libro
+class Book
 {
     private $name;
     private $publication_year;

@@ -10,10 +10,10 @@ class Shelf
 
     public function __construct()
     {
-        $this->shelf[0] = new Libro("El Hobbit", 1937, 1000, ["Bilbo", "Gandalf"]);
-        $this->shelf[1] = new Libro("La Comunidad del Anillo", 1954, 500, ["Frodo", "Sam", "Gandalf"]);
-        $this->shelf[2] = new Libro("Las Dos Torres", 1954, 328, ["Aragorn", "Legolas", "Gimli"]);
-        $this->shelf[3] = new Libro("El Retorno del Rey", 1955, 96, ["Denethor", "Sauron"]);
+        $this->shelf[0] = new Book("El Hobbit", 1937, 1000, ["Bilbo", "Gandalf"]);
+        $this->shelf[1] = new Book("La Comunidad del Anillo", 1954, 500, ["Frodo", "Sam", "Gandalf"]);
+        $this->shelf[2] = new Book("Las Dos Torres", 1954, 328, ["Aragorn", "Legolas", "Gimli"]);
+        $this->shelf[3] = new Book("El Retorno del Rey", 1955, 96, ["Denethor", "Sauron"]);
     }
 
     public function addBook($book) : void
@@ -26,7 +26,7 @@ class Shelf
         return $this->shelf;
     }
 
-    function getOldestBook(): Libro
+    function getOldestBook(): Book
     {
         $oldest = $this->shelf[0];
 
