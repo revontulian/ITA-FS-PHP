@@ -29,7 +29,7 @@ class Tigger
         return self::$instances[$cls];
     }
 
-    public static function getCounter(): int
+    public static function getRoarCounter(): int
     {
         global $roarCounter;
         return $roarCounter;

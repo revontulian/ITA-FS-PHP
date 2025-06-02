@@ -9,7 +9,7 @@ $tigger->roar();
 $tigger->roar();
 
 echo "<br>";
-echo "Tigger ha rugit " . $tigger->getCounter() . " cops. <br>";
+echo "Tigger ha rugit " . $tigger->getRoarCounter() . " cops. <br>";
 
 $tigger2 = Tigger::getInstance();
 
@@ -17,4 +17,4 @@ $tigger2->roar();
 $tigger2->roar();
 
 echo "<br>";
-echo "Ara Tigger ha rugit " . $tigger->getCounter() . " cops. <br>";
+echo "Ara Tigger ha rugit " . $tigger->getRoarCounter() . " cops. <br>";
